@@ -148,3 +148,20 @@ outside that patch. The finished wall is a 1254 × 1254 RGB8 PNG at
 symbols or other prohibited additions. No hands or handprints were added; Pepe's
 ancestral hands are concealed, so there are no visible digits to count. Unmet
 visual requirements observed: none.
+
+## Mark 27: Windowed Pebble
+
+[Timeline Window](tools/timeline-window/README.md) replays an evidence pack, then
+finds events whose uncertainty intervals can touch a chosen half-open UTC window.
+It distinguishes fully contained events from possible overlaps and separately
+reports undated lines and any truncated details. The one-command synthetic demo
+and six focused tests passed.
+
+The added ochre pebble between chalk arcs lies on previously unpainted lower-right
+rock. The final PNG changes only x=995..1149, y=900..1004; all ancestor pixels
+outside that rectangle, including Pepe, remain identical. The 1254-square PNG is
+`artifacts/line-3/wall-v7.png`, reached by `wall.png`; the 512-square JPEG is
+`dist/line-3/27.jpg`. Exact formats, hashes, dimensions and visual review are in
+[round-27-review.json](round-27-review.json). No hands or handprints were added,
+and no words, numbers or prohibited symbols were observed. Unmet visual
+requirements observed: none.

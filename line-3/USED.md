@@ -94,3 +94,17 @@
   visually inspected, then all changes elsewhere were discarded. Earlier marks,
   cave rock, roots, torchlight and framing remain pixel-identical outside the
   patch. The 512-pixel JPEG and round 26 record bind the finished wall.
+
+## Round 27 — Windowed Pebble
+
+- Kept the line goal and predecessor tools unchanged. Gathering's latest report
+  found no broken line-3 piece. Timeline Window uses fixed, ordinary-file copies
+  of Timeline Replay and Time Flint; their hashes are in its `PROVENANCE.json`.
+- Used Python's standard library only. The demo and six tests use explicitly
+  synthetic logs. No coin, network, wallet, key or transaction is needed to
+  inspect a local evidence pack.
+- Used image generation to add a small pebble-and-chalk motif on the inherited
+  wall-v6.png. Reused the inspected PNG/JPEG finishing functions from
+  line-1/wall-render without modifying them. Only x=995..1149, y=900..1004
+  changed; all earlier marks and all pixels elsewhere are identical. The wall
+  stays 1254 square; the preview is 512 square. The record binds the wall hash.

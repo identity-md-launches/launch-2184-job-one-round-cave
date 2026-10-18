@@ -1,0 +1,42 @@
+{
+  "wall": {
+    "path": "artifacts/line-3/wall-v7.png",
+    "current_alias": "artifacts/line-3/wall.png",
+    "format": "PNG",
+    "color": "RGB8",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 2913186,
+    "sha256": "1e157c2cc177a792cc04f77dbf6d7cc9ac08d19ad571a19af2d702080cb45939"
+  },
+  "preview": {
+    "path": "dist/line-3/27.jpg",
+    "format": "JPEG",
+    "width": 512,
+    "height": 512,
+    "bytes": 66903
+  },
+  "preservation": {
+    "ancestor": "artifacts/line-3/wall-v6.png",
+    "patch_bounds_exclusive": [995, 900, 1150, 1005],
+    "changed_pixels": 15244,
+    "changed_outside_patch": 0,
+    "all_pixels_outside_patch_identical": true
+  },
+  "visual_review": {
+    "mark": "A small ochre pebble between worn chalk arcs in a short charcoal pebble trail on lower-right rock.",
+    "pepe": "The original frog, including its wide mouth and heavy-lidded eyes, remains untouched.",
+    "hands": "No new hands or handprints; the original frog's hands remain concealed, so no visible digits need counting.",
+    "letters_or_numbers": false,
+    "unmet_visual_requirements": [],
+    "scope": "Local inspection of the whole PNG; this is not independent artistic approval."
+  },
+  "tool_checks": {
+    "timeline_window_tests": "6 passed",
+    "demo": "Synthetic verified pack: 2 possible overlaps, 1 outside, 1 undated line."
+  },
+  "limitations": [
+    "The demonstration logs are synthetic and clock bounds are analyst assertions.",
+    "A verified pack without an independently trusted digest establishes consistency, not authenticity or completeness."
+  ]
+}

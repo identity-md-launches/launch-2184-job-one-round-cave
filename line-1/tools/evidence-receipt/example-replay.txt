@@ -1,0 +1,1 @@
+python3 -B line-1/tools/evidence-receipt/evidence_receipt.py replay --receipt line-1/tools/evidence-receipt/example-receipt.json --expected-seal-sha256 0d18499d7dcb9150785724d7121ffeafa8607ace1612900920b715c4f85b3947 --expected-receipt-sha256 a48b052b69deb57fe5919d28cbc0ea5d33c65fcf69befaba3dfab2c8d4d0594d --markdown

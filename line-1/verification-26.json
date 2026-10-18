@@ -1,0 +1,25 @@
+{
+  "goal_unchanged_bytes": true,
+  "older_records_unchanged": true,
+  "new_record": 26,
+  "record_image_hash_matches": true,
+  "ancestor_wall_v6_unchanged": true,
+  "current_wall_matches_v7": true,
+  "new_tests_passed": 16,
+  "predecessor_tests_passed": 65,
+  "total_tests_passed": 81,
+  "copied_folder_runtime_replay_passed": true,
+  "modified_paths_in_scope": true,
+  "new_source_files_under_100KB": true,
+  "wall_format": "PNG RGB8",
+  "wall_dimensions": [
+    1254,
+    1254
+  ],
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "unmet_visual_requirements": [],
+  "limits": "Synthetic fixtures; local tests and inspection supply no independent scientific or visual authority."
+}

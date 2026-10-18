@@ -1,0 +1,22 @@
+{
+  "bounds": [
+    645,
+    286,
+    827,
+    359
+  ],
+  "changed_pixels": 12689,
+  "all_pixels_outside_identical": true,
+  "ancestor_sha256": "1195801f39ff757f9459b82e83745c320fcd936b624e1905cefeb09b383e0614",
+  "wall_sha256": "65ed4e00e13c357cfe9bff967eb9c5d352087909a028d0e07d71976a63d8c454",
+  "width": 1254,
+  "height": 1254,
+  "format": "PNG RGB8",
+  "png_bytes": 2849878,
+  "preview": {
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 66237
+  }
+}

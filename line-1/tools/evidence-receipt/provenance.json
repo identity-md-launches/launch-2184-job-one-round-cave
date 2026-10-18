@@ -1,0 +1,22 @@
+{
+  "snapshots": [
+    {
+      "file": "seal_engine.py",
+      "source": "line-1/tools/benchmark-seal/benchmark_seal.py",
+      "sha256": "77cd08746d0b435c44817ff15c8c1d7def6326882a69963aba250e68a4bfa507",
+      "unchanged": true
+    },
+    {
+      "file": "frozen_engine.py",
+      "source": "line-1/tools/benchmark-seal/frozen_engine.py",
+      "sha256": "dbc53097d4fd0e599dad6f3280438f446eb4bfe80afced946b644e3868e1acc1",
+      "unchanged": true
+    },
+    {
+      "file": "ladder_engine.py",
+      "source": "line-1/tools/candidate-ladder/candidate_ladder.py",
+      "sha256": "bce567dd5971bc85154a268f60207036c3c80d91ee4440da6a333851c614dc5e",
+      "unchanged": true
+    }
+  ]
+}

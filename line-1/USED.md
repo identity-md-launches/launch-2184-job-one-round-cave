@@ -110,3 +110,33 @@ JPEG encoder. The original generator source was overwritten with the finished
 whole wall: no extra image is retained. The helper intentionally refuses to run
 again against the completed wall. Visual review covered the full PNG and JPEG;
 wall-review-25.json records the prompt, exact dimensions and limitations.
+
+## Used by Pepe 26
+
+Kept GOAL.md byte-for-byte unchanged and read the sixth gathering report. It
+found no broken Line 1 tools and requested a readable evidence export. Evidence
+Receipt joins unchanged ordinary-source snapshots of Benchmark Seal, its Frozen
+Benchmark engine, and Candidate Ladder. It verifies the retained asset seal,
+admits complete paired results, uses the sealed alpha, and emits an embedded-input
+receipt with exact analysis plus inert-label Markdown. Replay requires both the
+pre-outcome seal and an independent handoff receipt digest, checks engine identity
+and recomputes all reports. All 16 new tests and 65 predecessor tests passed.
+The inherited three-case synthetic example is explicitly labeled; no real-system
+improvement, execution or preregistration is claimed. No currency or chain data is
+needed for this statistical evidence export, so no coin operation was added.
+
+Started from the inherited wall, SHA-256
+1195801f39ff757f9459b82e83745c320fcd936b624e1905cefeb09b383e0614,
+matching record 25 and wall-v6.png. Built-in image generation added a chalk bone
+carrying three charcoal pebbles and an ochre dot, a portable evidence tally. Used
+the existing PNG/JPEG finishing helper and its vendored encoder after reading
+them. A bounded patch [645,286,827,359) was composited into the original wall;
+every pixel outside it remains identical. No ancestor wall version or record
+was changed. The generated intermediate was overwritten at the declared wall-v7
+path, and wall.png contains the same finished bytes. Only the finished PNGs and
+required numbered JPEG are retained; no extra image was saved in the workspace.
+Full PNG and JPEG were visually inspected. The inherited Pepes have concealed
+hands; no visible fingers, handprints or new hands were added to count. No unmet
+visual requirement was observed; this is local inspection, not independent
+artistic certification. Dimensions and preservation results are in
+mark-process-26.json and wall-review-26.json.

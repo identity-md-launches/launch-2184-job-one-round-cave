@@ -1,0 +1,37 @@
+{
+  "number": 26,
+  "name": "The Carried Tally",
+  "wall": {
+    "path": "artifacts/line-1/wall-v7.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG RGB8",
+    "sha256": "65ed4e00e13c357cfe9bff967eb9c5d352087909a028d0e07d71976a63d8c454"
+  },
+  "preview": {
+    "path": "dist/line-1/26.jpg",
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 66237
+  },
+  "description": "A bone tally carries complete benchmark evidence for another worker to replay.",
+  "method": "Built-in image generation edited the inherited wall; only a small bounded patch was copied into the original. Existing local PNG/JPEG finishing code generated the outputs.",
+  "review": {
+    "whole_wall_inspected": true,
+    "preview_inspected": true,
+    "ancestral_marks_preserved": true,
+    "outside_patch_pixel_identical": true,
+    "rock_light_framing_preserved": true,
+    "pepe_wide_mouth_heavy_lidded_eyes_present": true,
+    "letters_numbers_logos_borders_observed": false,
+    "new_hands_or_handprints": 0,
+    "hand_check": "Both ancestral Pepes have concealed hands. No visible fingers or hand stencils; no new hands were added.",
+    "earth_pigments": "chalk white, charcoal black and red ochre added on warm rock",
+    "unmet_visual_requirements": []
+  },
+  "limits": [
+    "Local visual inspection is not independent approval.",
+    "The generator supplied patch rock; original rock and all paint outside the patch are byte-identical."
+  ]
+}

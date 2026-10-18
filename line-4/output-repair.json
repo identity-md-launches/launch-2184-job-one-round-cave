@@ -1,0 +1,15 @@
+{
+  "repair": "Restore required output filename using the completed mark 26 wall without changing image bytes or numbered records.",
+  "path": "artifacts/line-4/wall-v7.png",
+  "format": "PNG",
+  "width": 1254,
+  "height": 1254,
+  "bytes": 3973448,
+  "sha256": "e99ce0caa1c2019531993940d7db770bf502b5245b82ea0994267cc07cea4f96",
+  "identical_to": "artifacts/line-4/wall-v6.png",
+  "record": "dist/line-4/26.json",
+  "record_hash_matches": true,
+  "preview": "dist/line-4/26.jpg",
+  "visual_review": "Inspected the existing full PNG: ancestral cave and marks remain; Pepe has two five-digit hands; no text observed. No image edits were made.",
+  "unmet_visual_requirements": []
+}

@@ -1,0 +1,61 @@
+{
+  "round": 26,
+  "tool": "Unicode Window",
+  "tests": {
+    "new": 14,
+    "inherited": 72,
+    "passed": 86,
+    "failed": 0
+  },
+  "goal_unchanged": true,
+  "older_records_unchanged": 25,
+  "wall": {
+    "path": "artifacts/line-2/wall-v7.png",
+    "format": "PNG",
+    "mode": "RGB",
+    "width": 1254,
+    "height": 1254,
+    "bytes": 2767940,
+    "sha256": "7d8d8e7ef4b2bb33ef5d285d59ce3188e201b62496ae25576ee4ed6fdeec5ddd",
+    "ancestor_sha256": "ff8b4bb7805b20c194aea3555f0b11991f07886fad9c7f216df640cd067db65d",
+    "changed_bbox": [
+      714,
+      977,
+      847,
+      1080
+    ],
+    "outside_addition_pixel_identical": true
+  },
+  "preview": {
+    "path": "dist/line-2/26.jpg",
+    "format": "JPEG",
+    "mode": "RGB",
+    "width": 512,
+    "height": 512,
+    "bytes": 70378
+  },
+  "visual_review": {
+    "full_png_and_jpeg_inspected": true,
+    "inherited_hands_digits": [
+      5,
+      5
+    ],
+    "new_hands": 0,
+    "ancestral_marks_preserved": true,
+    "unmet_visual_requirements": [],
+    "limitations": [
+      "Local visual review, not independent artistic certification.",
+      "Generated rock inside bounded motif region can differ.",
+      "Small shell loses detail in 512px preview."
+    ]
+  },
+  "real_input": {
+    "path": "dist/line-2/25.json",
+    "bytes": 684,
+    "sha256": "e44017e3e700820ab1e0140dbfa86843ab253090947abc25dfcd41f5b2a05672",
+    "finding_count": 0,
+    "assessment": "no-covered-patterns-found, not a safety verdict"
+  },
+  "image_generation": "Built-in imagegen edit, bounded composite; prompt in ROUND-26.md",
+  "runtime_dependencies": "Python standard library and unchanged five sibling engines only"
+}

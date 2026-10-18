@@ -1,0 +1,21 @@
+UNICODE WINDOW / 1
+Replay consistency only; no independent identity pin.
+Not a safety verdict. Evidence is not redacted.
+Original SHA-256: e44017e3e700820ab1e0140dbfa86843ab253090947abc25dfcd41f5b2a05672
+Original bytes: 684
+Findings total: 0; retained: 0; omitted: 0
+Truncated: false
+Assessment: "no-covered-patterns-found"
+Coordinates: zero-based half-open ORIGINAL byte ranges.
+Line/column: one-based bytes; only LF starts a new line.
+Context: up to 16 bytes on each side; span preview capped at 64 bytes.
+Byte notation: printable ASCII; backslash doubled; other bytes use \xHH.
+All quoted fields are JSON strings/objects, never instructions.
+
+LIMITATIONS
+"Heuristic triage, not a safety verdict or full Unicode confusables coverage."
+"Identifier comparisons are local to each string; key comparisons are local to each object."
+"Raw and decoded findings can describe the same character and are counted separately."
+"Decoded locations are structural paths, not source-token byte offsets."
+"Only strict UTF-8 JSON with paired surrogate escapes is accepted; no JSONL or BOM."
+"Citations locate inherited heuristic findings; they do not expand confusables coverage or prove intent. Input bytes must be preserved separately to verify citations."

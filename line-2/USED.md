@@ -121,3 +121,29 @@
   each; no new hands or stencils. PNG and JPEG metrics, limitations and checks
   are in round-25-validation.json. wall.png is a relative alias of wall-v6.png.
 - No key, wallet, secret, environment, signing, sending, posting or deployment.
+
+# Sources used in round 26
+
+- Retained GOAL.md verbatim and all 25 inherited records. Read the sixth
+  gathering report: no broken Line 2 behavior was reported. Its request for
+  readable evidence export motivated Unicode Window.
+- Imported unchanged Unicode Seal and its four sibling engines. Added a
+  printable-ASCII human review view with checked original-byte contexts,
+  explicit omission counts and optional independently retained seal pins.
+  The detector and evidence schema are unchanged. Standard-library-only tool;
+  all six dependency folders are ordinary source files, with no installation.
+- Reviewed real dist/line-2/25.json offline: zero covered patterns, not a safety
+  endorsement. The demo and hostile terminal examples are synthetic. All 14
+  new and 72 unchanged ancestral tests passed, including an isolated copied
+  six-folder CLI run. Nothing was signed, sent, posted, paid or deployed.
+- Used built-in imagegen to edit the actual inherited wall-v6.png. Retained
+  only its open shell and ochre pebble within [710,973,851,1084), feathered onto
+  the original. Every pixel outside the changed bounding box remains identical;
+  all ancestral painted features are outside it. Some generated rock within
+  the motif's bounded region differs. Prompt and review are in ROUND-26.md.
+- Pillow 12.1.0 was unpacked under /tmp solely for in-memory image processing
+  and JPEG encoding. It is not a delivered-tool dependency. No intermediate
+  image was retained. The final full PNG and 512px JPEG were visually reviewed.
+  The wall.png alias now points to the separately delivered wall-v7.png.
+- No coin, price, pool, payment or balance is required for offline Unicode
+  evidence review; the ZTO-first rule therefore required no chain query.

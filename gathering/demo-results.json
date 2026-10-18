@@ -2,6 +2,197 @@
   "checks_passed": true,
   "examples": [
     {
+      "name": "evidence receipt JSON",
+      "command": [
+        "python3",
+        "-B",
+        "line-1/tools/evidence-receipt/evidence_receipt.py",
+        "demo",
+        "--json"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {}
+    },
+    {
+      "name": "evidence receipt readable demo",
+      "command": [
+        "python3",
+        "-B",
+        "line-1/tools/evidence-receipt/evidence_receipt.py",
+        "demo"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "text": {
+        "bytes": 2510,
+        "sha256": "d0e3bd54c2e2d910bb41f0b97356af24b33562d82276bcdd9406d0e62592d2ab",
+        "printable_ascii_and_lf": true,
+        "opening_lines": [
+          "# Benchmark evidence receipt",
+          "",
+          "Data: synthetic_demonstration.",
+          "",
+          "Complete paired observations admitted and exact McNemar/Holm analysis replayed.",
+          "",
+          "Baseline: synthetic-parser-v1."
+        ]
+      },
+      "observed": {}
+    },
+    {
+      "name": "evidence receipt shipped replay",
+      "command": [
+        "python3",
+        "-B",
+        "line-1/tools/evidence-receipt/evidence_receipt.py",
+        "replay",
+        "--receipt",
+        "line-1/tools/evidence-receipt/example-receipt.json",
+        "--expected-seal-sha256",
+        "0d18499d7dcb9150785724d7121ffeafa8607ace1612900920b715c4f85b3947",
+        "--expected-receipt-sha256",
+        "a48b052b69deb57fe5919d28cbc0ea5d33c65fcf69befaba3dfab2c8d4d0594d",
+        "--markdown"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "text": {
+        "bytes": 2510,
+        "sha256": "d0e3bd54c2e2d910bb41f0b97356af24b33562d82276bcdd9406d0e62592d2ab",
+        "printable_ascii_and_lf": true,
+        "opening_lines": [
+          "# Benchmark evidence receipt",
+          "",
+          "Data: synthetic_demonstration.",
+          "",
+          "Complete paired observations admitted and exact McNemar/Holm analysis replayed.",
+          "",
+          "Baseline: synthetic-parser-v1."
+        ]
+      },
+      "observed": {}
+    },
+    {
+      "name": "Unicode window demo",
+      "command": [
+        "python3",
+        "-B",
+        "line-2/tools/unicode-window/unicode_window.py",
+        "demo"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "text": {
+        "bytes": 3789,
+        "sha256": "6e1b90f6ff94999bddb794fb1a26f9358ac3b25db4126cf796c54e1ffaecdd14",
+        "printable_ascii_and_lf": true,
+        "opening_lines": [
+          "UNICODE WINDOW / 1",
+          "Replay consistency only; no independent identity pin.",
+          "Not a safety verdict. Evidence is not redacted.",
+          "Original SHA-256: 6041529b8515405f820466096a25d48876a0c98f3d6576de4a74189b9f53f2d2",
+          "Original bytes: 116",
+          "Findings total: 5; retained: 2; omitted: 3",
+          "Truncated: true"
+        ]
+      },
+      "observed": {}
+    },
+    {
+      "name": "Unicode window actual record",
+      "command": [
+        "python3",
+        "-B",
+        "line-2/tools/unicode-window/unicode_window.py",
+        "source",
+        "--file",
+        "dist/line-2/26.json"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "text": {
+        "bytes": 1243,
+        "sha256": "6edb8a9d318f7d304ce56e4a005d8e5a2b8bf3af84b4d5f94396f665a9095c6b",
+        "printable_ascii_and_lf": true,
+        "opening_lines": [
+          "UNICODE WINDOW / 1",
+          "Replay consistency only; no independent identity pin.",
+          "Not a safety verdict. Evidence is not redacted.",
+          "Original SHA-256: 6aa5febc76d1d97e9dc429e1682e11c55685080f3a1aee17a5faf9c471aece92",
+          "Original bytes: 664",
+          "Findings total: 0; retained: 0; omitted: 0",
+          "Truncated: false"
+        ]
+      },
+      "observed": {}
+    },
+    {
+      "name": "timeline window demo",
+      "command": [
+        "python3",
+        "-B",
+        "line-3/tools/timeline-window/timeline_window.py",
+        "demo"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {
+        "replay": {
+          "clock_uncertainty_ms": 250,
+          "events": 3,
+          "omitted": 1,
+          "sources": 2,
+          "verified": true
+        },
+        "counts": {
+          "contained": 0,
+          "events_total": 3,
+          "matching": 2,
+          "not_shown": 0,
+          "omitted_lines_not_shown": 0,
+          "omitted_lines_shown": 1,
+          "omitted_lines_total": 1,
+          "outside": 1,
+          "possible_overlap": 2,
+          "shown": 2
+        }
+      }
+    },
+    {
+      "name": "shared window review",
+      "command": [
+        "python3",
+        "-B",
+        "shared/window-review/window_review.py",
+        "demo"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "text": {
+        "bytes": 12201,
+        "sha256": "d69acfc8180b3fccbc6a92b7c8f59bda8d4a1c3e4b5cbfda22ff175f691583ea",
+        "printable_ascii_and_lf": true,
+        "opening_lines": [
+          "SYNTHETIC DEMONSTRATION; NOT A REAL INCIDENT",
+          "WINDOW REVIEW / 1",
+          "Pack exact-byte SHA-256: 1f49e6b957a63eba6f8ea7c0d6b968e7b6743b67a01adfab5043b6719069ed71",
+          "Independent digest checked: false",
+          "Query: {\"end_utc_exclusive\": \"2026-10-18T10:00:04Z\", \"start_utc_inclusive\": \"2026-10-18T10:00:02Z\"}",
+          "Counts: {\"contained\": 0, \"events_total\": 3, \"matching\": 2, \"not_shown\": 0, \"omitted_lines_not_shown\": 0, \"omitted_lines_shown\": 1, \"omitted_lines_total\": 1, \"outside\": 1, \"possible_overlap\": 2, \"shown\": 2}",
+          "Clock assumptions: {\"clock_uncertainty_ms\": 250, \"ignore_unmatched\": true}"
+        ]
+      },
+      "observed": {}
+    },
+    {
       "name": "interval clock",
       "command": [
         "python3",

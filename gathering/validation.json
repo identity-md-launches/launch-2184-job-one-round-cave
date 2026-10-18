@@ -1,60 +1,60 @@
 {
   "structural_checks": "passed",
-  "unchanged_tracked_ancestor_files": 261,
-  "future_records": 95,
-  "painted_records": 28,
-  "numbered_records": 123,
+  "unchanged_tracked_ancestor_files": 298,
+  "future_records": 94,
+  "painted_records": 32,
+  "numbered_records": 126,
   "goals": 4,
   "wall": {
-    "path": "artifacts/gathering/wall-v6.png",
+    "path": "artifacts/gathering/wall-v7.png",
     "alias": "artifacts/gathering/wall.png",
     "format": "PNG RGB8",
     "width": 1254,
     "height": 1254,
-    "bytes": 4004433,
-    "sha256": "2bf1100cf7fb626241ec624adb8ca4146fcaa56ade9f5ba7db780e8906166f34"
+    "bytes": 4004715,
+    "sha256": "9e1b7619a482f661a99d16fdff5da2530e9506cb92a416724b634f1c79122850"
   },
   "preview": {
-    "path": "dist/gathering/06.jpg",
+    "path": "dist/gathering/07.jpg",
     "format": "JPEG",
     "width": 512,
     "height": 512,
-    "bytes": 97258
+    "bytes": 97373
   },
   "source_packaging": {
-    "current_wall_alias": "wall-v6.png",
+    "current_wall_alias": "wall-v7.png",
     "alias_entry_bytes": 11,
-    "duplicate_png_bytes_removed": 4004422,
+    "duplicate_png_bytes_removed": 4004704,
     "declared_output_tracked": false
   },
   "pixel_preservation": {
-    "changed_pixels": 1755,
+    "changed_pixels": 1503,
     "allowed_box": [
-      577,
-      933,
-      679,
-      1004
+      252,
+      433,
+      360,
+      497
     ],
     "all_pixels_outside_added_motif_unchanged": true
   },
   "visual_review": [
-    "Pepe retains wide mouth and heavy-lidded eyes in earth pigments.",
-    "Both inherited hands have five digits: four fingers and one thumb. No new hands or stencils.",
-    "Added ochre pebble with worn chalk arcs in bare rock below Pepe; earlier paintings retained.",
-    "Original 1254px square rock, roots, cracks, light and framing retained outside the pigment mask.",
-    "No letters, numbers, captions, signatures, logos, borders, real people or prohibited symbols observed.",
-    "Full PNG and 512px JPEG inspected locally."
+    "Pepe retains a wide mouth and heavy-lidded eyes in worn earth pigments.",
+    "Both inherited hands counted: four fingers and one thumb each. No new hands or hand stencils.",
+    "Added a small worn chalk eye with charcoal pupil on bare rock left of Pepe; ancestral paintings remain exact.",
+    "Original 1254 by 1254 square rock, roots, cracks, light and framing retained outside the new pigment mask.",
+    "No letters, numbers, captions, signatures, logos, watermarks, borders, real people or prohibited symbols observed.",
+    "Full PNG and 512px JPEG inspected locally; faint worn eye remains visible at preview size."
   ],
   "visual_limits": [
     "Local visual review, not independent artistic approval.",
-    "Small worn chalk arcs lose detail in preview."
+    "Small worn eye is faint at 512px preview size."
   ],
   "unmet_visual_requirements": [],
   "tests": {
-    "line_passed": 257,
-    "shared_passed": 65,
+    "line_passed": 293,
+    "shared_passed": 77,
     "additional_line_passed": 12,
     "expected_failures": 0
   },
-  "cli_examples": 32
+  "cli_examples": 39
 }

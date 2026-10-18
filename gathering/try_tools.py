@@ -1,12 +1,20 @@
 #!/usr/bin/env python3
 """Run bounded documented CLI examples and preserve compact observed results."""
 import json
+import hashlib
 from pathlib import Path
 import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parent.parent
 CASES = [
+ ('evidence receipt JSON', ['line-1/tools/evidence-receipt/evidence_receipt.py', 'demo', '--json'], 0),
+ ('evidence receipt readable demo', ['line-1/tools/evidence-receipt/evidence_receipt.py', 'demo'], 0),
+ ('evidence receipt shipped replay', ['line-1/tools/evidence-receipt/evidence_receipt.py', 'replay', '--receipt', 'line-1/tools/evidence-receipt/example-receipt.json', '--expected-seal-sha256', '0d18499d7dcb9150785724d7121ffeafa8607ace1612900920b715c4f85b3947', '--expected-receipt-sha256', 'a48b052b69deb57fe5919d28cbc0ea5d33c65fcf69befaba3dfab2c8d4d0594d', '--markdown'], 0),
+ ('Unicode window demo', ['line-2/tools/unicode-window/unicode_window.py', 'demo'], 0),
+ ('Unicode window actual record', ['line-2/tools/unicode-window/unicode_window.py', 'source', '--file', 'dist/line-2/26.json'], 0),
+ ('timeline window demo', ['line-3/tools/timeline-window/timeline_window.py', 'demo'], 0),
+ ('shared window review', ['shared/window-review/window_review.py', 'demo'], 0),
  ('interval clock', ['shared/interval-clock/interval_clock.py', 'demo'], 0),
  ('benchmark seal', ['line-1/tools/benchmark-seal/benchmark_seal.py', 'demo'], 0),
  ('Unicode seal', ['line-2/tools/unicode-seal/unicode_seal.py', 'demo'], 0),
@@ -51,7 +59,15 @@ def main():
                'expected_exit': expected, 'exit_code': run.returncode,
                'passed': run.returncode == expected}
         if run.stdout:
-            value = json.loads(run.stdout)
+            try:
+                value = json.loads(run.stdout)
+            except json.JSONDecodeError:
+                value = {}
+                row['text'] = {'bytes': len(run.stdout.encode()),
+                    'sha256': hashlib.sha256(run.stdout.encode()).hexdigest(),
+                    'printable_ascii_and_lf': all(c == '\n' or 32 <= ord(c) <= 126 for c in run.stdout),
+                    'opening_lines': run.stdout.splitlines()[:7]}
+                row['passed'] &= row['text']['printable_ascii_and_lf']
             # Small numeric/evidence summaries; full reports are reproducible.
             keys = ['comparison', 'lower', 'upper', 'within', 'pair', 'line_changes', 'consistent_replacement_rejected', 'runtime_mismatch_rejected', 'rejected_rehashed_replacement', 'analysis', 'asserted_total_bound_ms', 'different_valid_bound_rejected', 'matching_receipt', 'failed_bound_verified', 'failed_bound_calculation_exit', 'rehashed_altered_result_rejected', 'verified', 'retained_findings', 'truncated', 'altered_citation_rejected', 'paired_cases', 'table', 'test', 'candidates', 'comparison_threshold',
                     'smallest_evaluated_size_meeting_target', 'sizes', 'finding_count',
@@ -60,7 +76,9 @@ def main():
                     'json_lines_checked', 'digest_pin_checked', 'bounds', 'rejected',
                     'same_group_certain_order', 'overlap', 'widened', 'normalized_csv']
             row['observed'] = {k: value[k] for k in keys if k in value}
-            if 'events' in value:
+            if 'counts' in value:
+                row['observed']['counts'] = value['counts']
+            if 'events' in value and 'omitted' in value:
                 row['observed'].update(events=len(value['events']), omitted=len(value['omitted']),
                                        overlap_groups=[e['overlap_group'] for e in value['events']])
         if run.stderr:

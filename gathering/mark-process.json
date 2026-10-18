@@ -1,15 +1,15 @@
 {
-  "method": "Only generated chalk and ochre pigment in a new crescent/pebble motif is composited onto unchanged ancestral pixels.",
+  "method": "Only generated chalk and charcoal pigment in a new eye motif is composited onto unchanged ancestral pixels.",
   "image_tool": "image_gen.imagegen",
-  "ancestor": "artifacts/gathering/wall-v5.png",
-  "ancestor_sha256": "ea089dfc222fdd7433abdc2206ca883a12e19157ebe29b27fc2ca724a3a72f23",
-  "generated_donor_sha256": "4700cf5b63605ef72ee385ca1ba7947c7f2c3f47489b06c639124e9cc64bc75e",
+  "ancestor": "artifacts/gathering/wall-v6.png",
+  "ancestor_sha256": "2bf1100cf7fb626241ec624adb8ca4146fcaa56ade9f5ba7db780e8906166f34",
+  "generated_donor_sha256": "a4f81114c625469508cf23a8174f13189868bebcd636ac7dd7a974731679bf3f",
   "destination_box": [
-    577,
-    933,
-    679,
-    1004
+    252,
+    433,
+    360,
+    497
   ],
-  "changed_pixels": 1755,
-  "preservation": "Every pixel outside the added pigment mask is identical to Gathering 05."
+  "changed_pixels": 1503,
+  "preservation": "Every pixel outside the added pigment mask is identical to Gathering 06."
 }

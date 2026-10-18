@@ -1,6 +1,6 @@
 none
 
-The four worker capabilities and the new Interval Clock handoff operate offline
+The four worker capabilities and the new Window Review handoff operate offline
 with standard-library Python. None needs a coin, price, payment, balance or pool.
 A new token or Uniswap v4 hook would enable no missing operation. No launch or
 contract deployment is justified; no order or network POST was made.

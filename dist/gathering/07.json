@@ -1,10 +1,30 @@
 {
-  "name": "Not painted yet",
-  "image": "https://api.imd.fun/artifacts/1694079b8c096876644b7db6f84112f2550b53ad024540401ad702809cb35941",
+  "name": "The Watchful Window",
+  "image": "https://api.imd.fun/artifacts/9e1b7619a482f661a99d16fdff5da2530e9506cb92a416724b634f1c79122850",
   "attributes": [
     {
       "trait_type": "Cave",
       "value": "Roots"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Gathering"
+    },
+    {
+      "trait_type": "Number",
+      "value": 7
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Window Review"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "A watchful chalk eye brings hidden evidence into the shared light."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Gathering"
     }
   ]
 }

@@ -60,3 +60,21 @@ Observed synthetic enclosure `[300,500.1] ms` rounds to 501 ms; the cited pair
 loses definite order without changing a line of evidence. Ten integration tests
 pass. Clock ranges remain analyst assertions, not measurements or causality.
 Copy the folder for standalone offline use; provenance pins unchanged snapshots.
+
+## Seventh gathering: Window Review
+
+[Window Review](window-review/README.md) connects Line 3's verified incident-window
+query to Line 2's printable ASCII evidence view. It reviews the original bytes
+behind shown matching events and undated lines, including decoded JSON controls,
+duplicate keys, BOM/CRLF coordinates and explicit omissions. Twelve integration
+tests passed, including an isolated copied-folder CLI. Ordinary engine snapshots
+ship with provenance; no packages or network are needed.
+
+```sh
+python3 -B shared/window-review/window_review.py demo
+```
+
+Observed synthetic result: two possible overlaps, one outside event and one
+undated duplicate-key line. Hidden direction controls remain visible as escaped
+evidence. Unshown/outside evidence is explicitly unreviewed. Earlier shared
+tools remain intact. The view proves neither log truth nor safety.

@@ -1,10 +1,10 @@
 {
   "checks_passed": true,
-  "tool": "Clock Receipt",
-  "method": "Copied complete shared/clock-receipt folder to test/scratch and invoked demo from copied script.",
+  "tool": "Window Review",
+  "method": "Twelve-test integration suite includes copying complete folder into task scratch and invoking demo and review from that isolated workspace.",
   "exit_code": 0,
-  "asserted_total_bound_ms": 750,
-  "pair_order_limit_ms": 500,
-  "different_valid_bound_rejected": true,
-  "runtime_dependencies": "Python standard library and shipped ordinary engine files; no network or install"
+  "matching_events": 2,
+  "outside_events": 1,
+  "undated_lines": 1,
+  "runtime_dependencies": "Python 3.10+ standard library and shipped ordinary engine files; no network or install"
 }

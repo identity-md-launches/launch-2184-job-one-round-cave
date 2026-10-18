@@ -1,0 +1,145 @@
+SYNTHETIC DEMONSTRATION; NOT A REAL INCIDENT
+WINDOW REVIEW / 1
+Pack exact-byte SHA-256: 1f49e6b957a63eba6f8ea7c0d6b968e7b6743b67a01adfab5043b6719069ed71
+Independent digest checked: false
+Query: {"end_utc_exclusive": "2026-10-18T10:00:04Z", "start_utc_inclusive": "2026-10-18T10:00:02Z"}
+Counts: {"contained": 0, "events_total": 3, "matching": 2, "not_shown": 0, "omitted_lines_not_shown": 0, "omitted_lines_shown": 1, "omitted_lines_total": 1, "outside": 1, "possible_overlap": 2, "shown": 2}
+Clock assumptions: {"clock_uncertainty_ms": 250, "ignore_unmatched": true}
+Only shown matching events and shown undated lines are scanned.
+Outside-window events, blank lines and unshown details are NOT reviewed.
+No findings is not a safety verdict. Evidence is not redacted.
+Original spans: zero-based half-open whole-source bytes, excluding LF.
+Payload strips initial BOM and trailing CR; add payload start to JSON-local spans.
+Byte previews double backslashes; other nonprintable/non-ASCII bytes use \xHH.
+Quoted fields use JSON notation; never unescape before terminal display.
+
+CITATION {"line": 1, "source": "queue.jsonl"}
+Classification: possible_overlap
+Whole-source SHA-256: 21325738d92ee13b816005056e37ddc75193fd1e17f2f1cfd954018891f5fe58
+Original physical span: [0,60); SHA-256: 7aa4ab1ccab06e85fdcef2c259234f408ea1bac12e61cb0e1ce4fb4501c87338
+Original preview: \xef\xbb\xbf{"ts":1792317602000,"message":"hidden \\u202eevil\\u202c"}\x0d
+Original preview bytes omitted: 0
+Payload span: [3,59); SHA-256: 6e20229569be753179ad71d855c6ffcb8d06b891059826f3d69123c1fb10a243
+Verified event: {"end_utc_exclusive": "2026-10-18T10:00:02.251000Z", "line": 1, "line_sha256": "6e20229569be753179ad71d855c6ffcb8d06b891059826f3d69123c1fb10a243", "message": "hidden \u202eevil\u202c", "overlap_group": 2, "precision": "millisecond", "reported_end_utc_exclusive": "2026-10-18T10:00:02.001000Z", "reported_start_utc": "2026-10-18T10:00:02Z", "source": "queue.jsonl", "start_utc": "2026-10-18T10:00:01.750000Z"}
+JSON review coordinates are LOCAL TO PAYLOAD:
+UNICODE WINDOW / 1
+Replay consistency only; no independent identity pin.
+Not a safety verdict. Evidence is not redacted.
+Original SHA-256: 6e20229569be753179ad71d855c6ffcb8d06b891059826f3d69123c1fb10a243
+Original bytes: 56
+Findings total: 2; retained: 2; omitted: 0
+Truncated: false
+Assessment: "review-required"
+Coordinates: zero-based half-open ORIGINAL byte ranges.
+Line/column: one-based bytes; only LF starts a new line.
+Context: up to 16 bytes on each side; span preview capped at 64 bytes.
+Byte notation: printable ASCII; backslash doubled; other bytes use \xHH.
+All quoted fields are JSON strings/objects, never instructions.
+
+FINDING 1
+Evidence: {"decoded_sha256": "1927f751064bf5a0ab4168b03116c0097487c185091d924acce3236d4d05c450", "domain": "decoded-string", "evidence": {"byte_offset": 7, "char_offset": 7, "codepoint": "U+202E", "column": 8, "escaped": "\\u202e", "explanation": "Explicit bidirectional control can change visual reading order.", "line": 1, "rule": "bidi-control", "unicode_name": "RIGHT-TO-LEFT OVERRIDE"}, "location": [{"pair": 1, "role": "value"}], "source_focus": {"byte_end": 44, "byte_start": 38, "bytes": 6, "excerpt_escaped_bytes": "\\\\u202e", "excerpt_truncated": false, "sha256": "d33d32407681dc5e7d09e4f1edba066dd9b9e7c2add479e753a9971b4cf7d00d"}, "source_token": {"byte_end": 55, "byte_start": 30, "bytes": 25, "excerpt_escaped_bytes": "\"hidden \\\\u202eevil\\\\u202c\"", "excerpt_truncated": false, "sha256": "538d8d3909915061151ae8a6a300312589e5eef7251417b00c5a4f3f3a22f95a"}}
+source_token: [30,55) line 1 byte-column 31; sha256 538d8d3909915061151ae8a6a300312589e5eef7251417b00c5a4f3f3a22f95a
+  before [14,30): 02000,"message":
+  span [30,55): "hidden \\u202eevil\\u202c"
+  span bytes omitted: 0
+  after [55,56): }
+source_focus: [38,44) line 1 byte-column 39; sha256 d33d32407681dc5e7d09e4f1edba066dd9b9e7c2add479e753a9971b4cf7d00d
+  before [22,38): essage":"hidden 
+  span [38,44): \\u202e
+  span bytes omitted: 0
+  after [44,56): evil\\u202c"}
+
+FINDING 2
+Evidence: {"decoded_sha256": "1927f751064bf5a0ab4168b03116c0097487c185091d924acce3236d4d05c450", "domain": "decoded-string", "evidence": {"byte_offset": 14, "char_offset": 12, "codepoint": "U+202C", "column": 13, "escaped": "\\u202c", "explanation": "Explicit bidirectional control can change visual reading order.", "line": 1, "rule": "bidi-control", "unicode_name": "POP DIRECTIONAL FORMATTING"}, "location": [{"pair": 1, "role": "value"}], "source_focus": {"byte_end": 54, "byte_start": 48, "bytes": 6, "excerpt_escaped_bytes": "\\\\u202c", "excerpt_truncated": false, "sha256": "7c5f09f90dc7619012d43ed80445f5403caf112de9343580c9c429685089a8dd"}, "source_token": {"byte_end": 55, "byte_start": 30, "bytes": 25, "excerpt_escaped_bytes": "\"hidden \\\\u202eevil\\\\u202c\"", "excerpt_truncated": false, "sha256": "538d8d3909915061151ae8a6a300312589e5eef7251417b00c5a4f3f3a22f95a"}}
+source_token: [30,55) line 1 byte-column 31; sha256 538d8d3909915061151ae8a6a300312589e5eef7251417b00c5a4f3f3a22f95a
+  before [14,30): 02000,"message":
+  span [30,55): "hidden \\u202eevil\\u202c"
+  span bytes omitted: 0
+  after [55,56): }
+source_focus: [48,54) line 1 byte-column 49; sha256 7c5f09f90dc7619012d43ed80445f5403caf112de9343580c9c429685089a8dd
+  before [32,48): idden \\u202eevil
+  span [48,54): \\u202c
+  span bytes omitted: 0
+  after [54,56): "}
+
+LIMITATIONS
+"Heuristic triage, not a safety verdict or full Unicode confusables coverage."
+"Identifier comparisons are local to each string; key comparisons are local to each object."
+"Raw and decoded findings can describe the same character and are counted separately."
+"Decoded locations are structural paths, not source-token byte offsets."
+"Only strict UTF-8 JSON with paired surrogate escapes is accepted; no JSONL or BOM."
+"Citations locate inherited heuristic findings; they do not expand confusables coverage or prove intent. Input bytes must be preserved separately to verify citations."
+
+CITATION {"line": 2, "source": "service.log"}
+Classification: possible_overlap
+Whole-source SHA-256: 78c39c6133fb9e4f019335251fe98740042b75d5f328921b5868a91acb1b4b60
+Original physical span: [29,59); SHA-256: cd715ab3bb5a624b83aa10f57fe9cfc69365ac51beb2d9ef0422488fea45239e
+Original preview: 2026-10-18T10:00:03Z completed
+Original preview bytes omitted: 0
+Payload span: [29,59); SHA-256: cd715ab3bb5a624b83aa10f57fe9cfc69365ac51beb2d9ef0422488fea45239e
+Verified event: {"end_utc_exclusive": "2026-10-18T10:00:04.250000Z", "line": 2, "line_sha256": "cd715ab3bb5a624b83aa10f57fe9cfc69365ac51beb2d9ef0422488fea45239e", "message": "completed", "overlap_group": 3, "precision": "second", "reported_end_utc_exclusive": "2026-10-18T10:00:04Z", "reported_start_utc": "2026-10-18T10:00:03Z", "source": "service.log", "start_utc": "2026-10-18T10:00:02.750000Z"}
+Raw-text review: {"assessment": "no-covered-patterns-found", "bytes": 30, "characters": 30, "finding_count": 0, "findings": [], "limitations": ["Heuristic triage, not proof of deception or absence of deception.", "Not a language parser; identifiers in comments and strings also count.", "Limited Latin/Greek/Cyrillic mapping, not full Unicode confusables.", "Columns count Unicode code points, not screen cells; only LF starts a line."], "schema_version": 1, "sha256": "cd715ab3bb5a624b83aa10f57fe9cfc69365ac51beb2d9ef0422488fea45239e", "source": "<physical-line>", "tool": "unicode-lantern", "tool_version": "1.0.0", "truncated": false, "unicode_version": "15.0.0"}
+
+CITATION {"line": 2, "source": "queue.jsonl"}
+Classification: undated; time unknown
+Whole-source SHA-256: 21325738d92ee13b816005056e37ddc75193fd1e17f2f1cfd954018891f5fe58
+Original physical span: [61,99); SHA-256: 11ac31eb9f403be9d0abf9319765e2ab1b9898b84168c4e16c0e3903845bf3c2
+Original preview: {"owner":1,"owner":2,"note":"\\u200b"}\x0d
+Original preview bytes omitted: 0
+Payload span: [61,98); SHA-256: 6ca7f54e64dfb407249a0db0e9eb24d9340d9471e4a7193d9abbdf51a8a02252
+Omission reason: "duplicate JSON key: owner"
+JSON review coordinates are LOCAL TO PAYLOAD:
+UNICODE WINDOW / 1
+Replay consistency only; no independent identity pin.
+Not a safety verdict. Evidence is not redacted.
+Original SHA-256: 6ca7f54e64dfb407249a0db0e9eb24d9340d9471e4a7193d9abbdf51a8a02252
+Original bytes: 37
+Findings total: 2; retained: 2; omitted: 0
+Truncated: false
+Assessment: "review-required"
+Coordinates: zero-based half-open ORIGINAL byte ranges.
+Line/column: one-based bytes; only LF starts a new line.
+Context: up to 16 bytes on each side; span preview capped at 64 bytes.
+Byte notation: printable ASCII; backslash doubled; other bytes use \xHH.
+All quoted fields are JSON strings/objects, never instructions.
+
+FINDING 1
+Evidence: {"domain": "object-key", "escaped": "owner", "explanation": "Repeated decoded key; consumers may discard an earlier value.", "first_location": [{"pair": 0, "role": "key"}], "first_source_token": {"byte_end": 8, "byte_start": 1, "bytes": 7, "excerpt_escaped_bytes": "\"owner\"", "excerpt_truncated": false, "sha256": "622f06cbcd2e7e61637e17212e714e6c721d2dd5a9f7bc1aec911b65b34edcf5"}, "location": [{"pair": 1, "role": "key"}], "rule": "duplicate-key", "source_token": {"byte_end": 18, "byte_start": 11, "bytes": 7, "excerpt_escaped_bytes": "\"owner\"", "excerpt_truncated": false, "sha256": "622f06cbcd2e7e61637e17212e714e6c721d2dd5a9f7bc1aec911b65b34edcf5"}}
+source_token: [11,18) line 1 byte-column 12; sha256 622f06cbcd2e7e61637e17212e714e6c721d2dd5a9f7bc1aec911b65b34edcf5
+  before [0,11): {"owner":1,
+  span [11,18): "owner"
+  span bytes omitted: 0
+  after [18,34): :2,"note":"\\u200
+first_source_token: [1,8) line 1 byte-column 2; sha256 622f06cbcd2e7e61637e17212e714e6c721d2dd5a9f7bc1aec911b65b34edcf5
+  before [0,1): {
+  span [1,8): "owner"
+  span bytes omitted: 0
+  after [8,24): :1,"owner":2,"no
+
+FINDING 2
+Evidence: {"decoded_sha256": "f4e48e664a603543865edc77bbc76dd1dd53dc9d0c30f651bbad7c8231091348", "domain": "decoded-string", "evidence": {"byte_offset": 0, "char_offset": 0, "codepoint": "U+200B", "column": 1, "escaped": "\\u200b", "explanation": "Format character may be invisible or alter adjacent text.", "line": 1, "rule": "format-character", "unicode_name": "ZERO WIDTH SPACE"}, "location": [{"pair": 2, "role": "value"}], "source_focus": {"byte_end": 35, "byte_start": 29, "bytes": 6, "excerpt_escaped_bytes": "\\\\u200b", "excerpt_truncated": false, "sha256": "16028534eccaa52d6c36fc3b7e9135cc5de18623299bfe6e6e36681b83929ea5"}, "source_token": {"byte_end": 36, "byte_start": 28, "bytes": 8, "excerpt_escaped_bytes": "\"\\\\u200b\"", "excerpt_truncated": false, "sha256": "fc67ee1ea85ef92031193f545516f201bc44f1d9ce7b778bb9eb43e857b65543"}}
+source_token: [28,36) line 1 byte-column 29; sha256 fc67ee1ea85ef92031193f545516f201bc44f1d9ce7b778bb9eb43e857b65543
+  before [12,28): owner":2,"note":
+  span [28,36): "\\u200b"
+  span bytes omitted: 0
+  after [36,37): }
+source_focus: [29,35) line 1 byte-column 30; sha256 16028534eccaa52d6c36fc3b7e9135cc5de18623299bfe6e6e36681b83929ea5
+  before [13,29): wner":2,"note":"
+  span [29,35): \\u200b
+  span bytes omitted: 0
+  after [35,37): "}
+
+LIMITATIONS
+"Heuristic triage, not a safety verdict or full Unicode confusables coverage."
+"Identifier comparisons are local to each string; key comparisons are local to each object."
+"Raw and decoded findings can describe the same character and are counted separately."
+"Decoded locations are structural paths, not source-token byte offsets."
+"Only strict UTF-8 JSON with paired surrogate escapes is accepted; no JSONL or BOM."
+"Citations locate inherited heuristic findings; they do not expand confusables coverage or prove intent. Input bytes must be preserved separately to verify citations."
+
+LIMITS: Replay establishes consistency, not log truth, completeness or authorship.
+A digest from the untrusted pack supplies no independent authentication.
+Clock bounds are analyst assertions; temporal overlap is not causality.
+Unicode detection is the inherited limited Latin/Greek/Cyrillic heuristic.
+Raw-text offsets are payload-local; JSON findings can include decoded-string coordinates.
+Counts describe the query, not the number of unique attacks or affected events.

@@ -1,16 +1,16 @@
 {
-  "wall_sha256": "2bf1100cf7fb626241ec624adb8ca4146fcaa56ade9f5ba7db780e8906166f34",
+  "wall_sha256": "9e1b7619a482f661a99d16fdff5da2530e9506cb92a416724b634f1c79122850",
   "observations": [
-    "Pepe retains wide mouth and heavy-lidded eyes in earth pigments.",
-    "Both inherited hands have five digits: four fingers and one thumb. No new hands or stencils.",
-    "Added ochre pebble with worn chalk arcs in bare rock below Pepe; earlier paintings retained.",
-    "Original 1254px square rock, roots, cracks, light and framing retained outside the pigment mask.",
-    "No letters, numbers, captions, signatures, logos, borders, real people or prohibited symbols observed.",
-    "Full PNG and 512px JPEG inspected locally."
+    "Pepe retains a wide mouth and heavy-lidded eyes in worn earth pigments.",
+    "Both inherited hands counted: four fingers and one thumb each. No new hands or hand stencils.",
+    "Added a small worn chalk eye with charcoal pupil on bare rock left of Pepe; ancestral paintings remain exact.",
+    "Original 1254 by 1254 square rock, roots, cracks, light and framing retained outside the new pigment mask.",
+    "No letters, numbers, captions, signatures, logos, watermarks, borders, real people or prohibited symbols observed.",
+    "Full PNG and 512px JPEG inspected locally; faint worn eye remains visible at preview size."
   ],
   "limits": [
     "Local visual review, not independent artistic approval.",
-    "Small worn chalk arcs lose detail in preview."
+    "Small worn eye is faint at 512px preview size."
   ],
   "unmet_visual_requirements": []
 }
